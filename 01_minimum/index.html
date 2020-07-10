@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Minimum</title>
-</head>
-<body>
-  <script type="module">
-    import { h, Component, render } from 'https://unpkg.com/preact?module';
+  <head>
+    <meta charset="UTF-8" />
+    <title>Minimum</title>
+  </head>
+  <body>
+    <script type="module">
+      import { h, Component, render } from "https://unpkg.com/preact?module";
 
-    const app = h('h1', null, 'Hello Preact!');
+      const app = h(
+        "div",
+        null,
+        ...[h("h1", null, "Hello Preact!"), h("p", null, "Minimum code.")]
+      );
 
-    render(app, document.body);
-  </script>
-</body>
+      render(app, document.body);
+    </script>
+  </body>
 </html>
