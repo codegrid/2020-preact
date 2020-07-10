@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "name": "2020-preact",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codegrid/2020-preact.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codegrid/2020-preact/issues"
+  },
+  "homepage": "https://github.com/codegrid/2020-preact#readme",
+  "devDependencies": {
+    "serve": "^11.3.2"
+  }
+}
