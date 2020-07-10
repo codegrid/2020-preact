@@ -5,7 +5,8 @@
   "description": "",
   "scripts": {
     "start": "serve",
-    "format": "prettier --write **/*"
+    "format": "prettier --write **/*",
+    "babel": "babel --verbose ./*/src -d ../dist --relative"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,9 @@
   },
   "homepage": "https://github.com/codegrid/2020-preact#readme",
   "devDependencies": {
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/plugin-transform-react-jsx": "^7.10.4",
     "prettier": "^2.0.5",
     "serve": "^11.3.2"
   }
