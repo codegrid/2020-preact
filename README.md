@@ -6,7 +6,7 @@
 npm install
 
 # ビルドが必要なデモもある
-npm run babel
+npm run build
 
 # ローカルでサーバーを建てる
 npm start

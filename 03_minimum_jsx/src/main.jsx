@@ -1,4 +1,4 @@
-import { h, render } from "https://unpkg.com/preact?module";
+import { h, render } from "preact";
 
 const App = () => (
   <div>

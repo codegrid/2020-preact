@@ -6,7 +6,7 @@
   "scripts": {
     "start": "serve",
     "format": "prettier --write **/*",
-    "babel": "babel --verbose ./*/src -d ../dist --relative"
+    "build": "rollup -c ./rollup.config.js"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,14 @@
     "@babel/cli": "^7.10.4",
     "@babel/core": "^7.10.4",
     "@babel/plugin-transform-react-jsx": "^7.10.4",
+    "@rollup/plugin-babel": "^5.1.0",
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-node-resolve": "^8.4.0",
     "prettier": "^2.0.5",
+    "rollup": "^2.21.0",
     "serve": "^11.3.2"
+  },
+  "dependencies": {
+    "preact": "^10.4.5"
   }
 }
