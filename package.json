@@ -32,6 +32,7 @@
     "serve": "^11.3.2"
   },
   "dependencies": {
+    "goober": "^2.0.2",
     "preact": "^10.4.5"
   }
 }
