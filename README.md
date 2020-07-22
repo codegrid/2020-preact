@@ -1,6 +1,7 @@
 # 2020-preact
 
 ## Scripts
+
 ```
 # リポジトリをクローンしたら
 npm install
