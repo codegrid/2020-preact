@@ -19,8 +19,8 @@ const flavorsList = [
 ];
 
 export const App = () => {
-  const [currentFlavorIdx] = useState(2);
-  const [flavors] = useState([flavorsList[2], null, null]);
+  const [currentFlavorIdx] = useState(0);
+  const [flavors] = useState([flavorsList[4], null, null]);
   const [withCone] = useState(true);
 
   return (
