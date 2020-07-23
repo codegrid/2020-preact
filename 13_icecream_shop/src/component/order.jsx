@@ -3,7 +3,15 @@ import { css } from "goober";
 
 import { Picker } from "./picker.jsx";
 
-export const Order = ({ flavorsList, currentFlavorIdx, withCone, setCurrentFlavorIdx, addFlavor, deleteFlavor, setWithCone }) => (
+export const Order = ({
+  flavorsList,
+  currentFlavorIdx,
+  withCone,
+  setCurrentFlavorIdx,
+  addFlavor,
+  deleteFlavor,
+  setWithCone,
+}) => (
   <section class={itemStyle}>
     <h2>Order</h2>
     <Picker
