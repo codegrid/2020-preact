@@ -49,7 +49,7 @@ export const App = () => (
         <pre class={previewStyle}>
           {JSON.stringify(
             {
-              flavors: ["mintcream", "chocolate", null],
+              flavors: ["mintcream", "chocolate"],
               withCone: true,
             },
             null,

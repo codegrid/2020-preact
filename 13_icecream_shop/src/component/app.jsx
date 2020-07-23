@@ -19,9 +19,19 @@ const flavorsList = [
 ];
 
 export const App = () => {
-  const [currentFlavorIdx] = useState(0);
-  const [flavors] = useState([flavorsList[4]]);
-  const [withCone] = useState(true);
+  const [currentFlavorIdx, setCurrentFlavorIdx] = useState(0);
+  const [flavors, setFlavors] = useState([flavorsList[4]]);
+  const [withCone, setWithCone] = useState(true);
+
+  const addFlavor = () => {
+    const nextFlavors = [...flavors, flavorsList[currentFlavorIdx]];
+    setFlavors(nextFlavors);
+  };
+  const deleteFlavor = () => {
+    const nextFlavors = [...flavors];
+    nextFlavors.pop();
+    setFlavors(nextFlavors);
+  };
 
   return (
     <main class={mainStyle}>
@@ -34,6 +44,10 @@ export const App = () => {
             flavorsList,
             currentFlavorIdx,
             withCone,
+            setCurrentFlavorIdx,
+            addFlavor,
+            deleteFlavor,
+            setWithCone,
           }}
         />
         <Preview flavors={flavors} withCone={withCone} />
