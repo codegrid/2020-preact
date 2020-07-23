@@ -24,6 +24,7 @@ export const App = () => {
   const [withCone, setWithCone] = useState(true);
 
   const addFlavor = () => {
+    if (flavors.length >= 3) return;
     const nextFlavors = [...flavors, flavorsList[currentFlavorIdx]];
     setFlavors(nextFlavors);
   };
@@ -55,6 +56,7 @@ export const App = () => {
       <div class={orderStyle}>
         <button
           class={orderButtonStyle}
+          disabled={flavors.length < 1}
           onClick={() => console.log("My order is", { flavors, withCone })}
         >
           Order👌
