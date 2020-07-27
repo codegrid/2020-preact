@@ -1,5 +1,4 @@
 import { h, render } from "preact";
-import { useState, useEffect } from "preact/hooks";
 
 import { GoodEffect, BadEffect } from "./effect.jsx";
 

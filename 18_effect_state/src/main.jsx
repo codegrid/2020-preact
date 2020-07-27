@@ -1,14 +1,14 @@
 import { h, render } from "preact";
 
-import { GoodRender, BadRender } from "./render.jsx";
+import { GoodEffectState, BadEffectState } from "./effect.jsx";
 
 const App = () => (
   <div>
     <h3>Good</h3>
-    <GoodRender />
+    <GoodEffectState />
     <hr />
     <h3>Bad</h3>
-    <BadRender />
+    <BadEffectState />
   </div>
 );
 
