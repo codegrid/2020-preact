@@ -9,7 +9,7 @@ export const Picker = ({ flavors, currentIdx, onPick }) => (
         class={pickerStyle(idx === currentIdx)}
         style={{ backgroundColor: f }}
         onClick={() => onPick(idx)}
-      ></div>
+      />
     ))}
   </div>
 );

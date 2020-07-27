@@ -10,8 +10,8 @@ export const GoodEffect = () => {
 
   return (
     <div>
-      <button onClick={() => setStateA((a) => a + "!")}>{stateA}</button>
-      <button onClick={() => setStateB((b) => b + "?")}>{stateB}</button>
+      <button onClick={() => setStateA((a) => `${a}!`)}>{stateA}</button>
+      <button onClick={() => setStateB((b) => `${b}?`)}>{stateB}</button>
     </div>
   );
 };
@@ -25,8 +25,8 @@ export const BadEffect = () => {
 
   return (
     <div>
-      <button onClick={() => setStateA((a) => a + "!")}>{stateA}</button>
-      <button onClick={() => setStateB((b) => b + "?")}>{stateB}</button>
+      <button onClick={() => setStateA((a) => `${a}!`)}>{stateA}</button>
+      <button onClick={() => setStateB((b) => `${b}?`)}>{stateB}</button>
     </div>
   );
 };

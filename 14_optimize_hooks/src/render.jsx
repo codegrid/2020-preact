@@ -2,8 +2,8 @@ import { h } from "preact";
 import { useState, useMemo } from "preact/hooks";
 
 function heavyOperationWithA(a) {
-  waitSync(500);
-  return a + "!";
+  window.waitSync(500);
+  return `${a}!`;
 }
 
 export const GoodRender = () => {
@@ -17,8 +17,8 @@ export const GoodRender = () => {
       <p>a: {stateA}</p>
       <p>b: {stateB}</p>
       <p> computedA: {computedA} </p>
-      <button onClick={() => setStateA((a) => a + "A")}>updateA</button>
-      <button onClick={() => setStateB((b) => b + "B")}>updateB</button>
+      <button onClick={() => setStateA((a) => `${a}A`)}>updateA</button>
+      <button onClick={() => setStateB((b) => `${b}B`)}>updateB</button>
     </div>
   );
 };
@@ -34,8 +34,8 @@ export const BadRender = () => {
       <p>a: {stateA}</p>
       <p>b: {stateB}</p>
       <p> computedA: {computedA} </p>
-      <button onClick={() => setStateA((a) => a + "A")}>updateA</button>
-      <button onClick={() => setStateB((b) => b + "B")}>updateB</button>
+      <button onClick={() => setStateA((a) => `${a}A`)}>updateA</button>
+      <button onClick={() => setStateB((b) => `${b}B`)}>updateB</button>
     </div>
   );
 };

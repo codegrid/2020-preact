@@ -28,7 +28,7 @@ export const App = () => (
               key={f}
               class={pickerStyle(f === "mintcream")}
               style={{ backgroundColor: f }}
-            ></div>
+            />
           ))}
         </div>
         <div class={actionStyle}>

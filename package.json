@@ -5,7 +5,7 @@
   "description": "",
   "scripts": {
     "start": "serve",
-    "format": "prettier --write **/*",
+    "format": "eslint **/*.jsx --fix",
     "dev": "rollup -w -c ./rollup.config.js",
     "build": "rollup -c ./rollup.config.js"
   },
@@ -27,6 +27,11 @@
     "@rollup/plugin-babel": "^5.1.0",
     "@rollup/plugin-commonjs": "^14.0.0",
     "@rollup/plugin-node-resolve": "^8.4.0",
+    "eslint": "^7.5.0",
+    "eslint-config-preact": "^1.1.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react-hooks": "^4.0.8",
     "prettier": "^2.0.5",
     "rollup": "^2.21.0",
     "serve": "^11.3.2"
