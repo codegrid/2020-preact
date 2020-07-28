@@ -1,9 +1,7 @@
 import { h, render } from "preact";
 import { useState, useEffect } from "preact/hooks";
 
-const Clock = ({ data }) => (
-  <div>{new Date(data.now).toLocaleTimeString(data.locale)}</div>
-);
+import { Clock } from "./clock.jsx";
 
 const App = () => {
   const [now, setNow] = useState(Date.now());
