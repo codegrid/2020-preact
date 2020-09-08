@@ -1,11 +1,11 @@
 import { h } from "preact";
 import { useState, useErrorBoundary } from "preact/hooks";
 
-const Error = ({ fake }) => <p>{fake.undef}</p>;
+const Err = ({ fake }) => <p>{fake.undef}</p>;
 
 export const GoodError = () => {
   const [count, setCount] = useState(0);
-  const [mountError, setMountError] = useState(false);
+  const [mountErr, setMountErr] = useState(false);
   const [error] = useErrorBoundary();
 
   if (error)
@@ -17,22 +17,22 @@ export const GoodError = () => {
 
   return (
     <div>
-      {mountError && <Error />}
+      {mountErr && <Err />}
       <button onClick={() => setCount((c) => c + 1)}>{count}</button>
-      <button onClick={() => setMountError(true)}>error!</button>
+      <button onClick={() => setMountErr(true)}>error!</button>
     </div>
   );
 };
 
 export const BadError = () => {
   const [count, setCount] = useState(0);
-  const [mountError, setMountError] = useState(false);
+  const [mountErr, setMountErr] = useState(false);
 
   return (
     <div>
-      {mountError && <Error />}
+      {mountErr && <Err />}
       <button onClick={() => setCount((c) => c + 1)}>{count}</button>
-      <button onClick={() => setMountError(true)}>error!</button>
+      <button onClick={() => setMountErr(true)}>error!</button>
     </div>
   );
 };
