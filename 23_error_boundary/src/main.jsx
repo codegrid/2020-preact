@@ -1,13 +1,13 @@
 import { h, render } from "preact";
 
 import { GoodError, BadError } from "./error.jsx";
+import { Counter } from "./counter.jsx";
 
 const App = () => (
   <div>
-    <h3>Good</h3>
-    <GoodError />
+    <Counter />
     <hr />
-    <h3>Bad</h3>
+    <GoodError />
     <BadError />
   </div>
 );
