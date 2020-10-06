@@ -8,7 +8,7 @@ export const messages = {
   },
   en: {
     hello: "Hello!",
-    section1: "In this demo, you will leran how to implement i18.",
+    section1: "In this demo, you will learn how to implement i18.",
     section2: "To learn, we try it without using Context API.",
     section3: "You need to pass current lang as Props for every components.",
     bye: "Bye-bye.",
