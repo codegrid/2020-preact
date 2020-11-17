@@ -22,7 +22,7 @@
   "homepage": "https://github.com/codegrid/2020-preact#readme",
   "devDependencies": {
     "chokidar": "^3.4.2",
-    "esbuild": "^0.7.14",
+    "esbuild": "^0.8.8",
     "eslint": "^7.11.0",
     "eslint-config-preact": "^1.1.1",
     "eslint-config-prettier": "^6.12.0",
